@@ -3,10 +3,10 @@ import Link from 'next/link'
 
 export default function Home() {
 	return (
-		<main className='grid min-h-screen grid-cols-2 lg:grid-cols-1 gap-10 lg:gap-5 items-center justify-between px-24 py-10 relative 2xl:px-10'>
+		<main className='grid min-h-screen grid-cols-2 lg:grid-cols-1 gap-10 lg:gap-5 items-center justify-between px-16 py-10 relative 2xl:px-10'>
 			<Image
 				src={'/main-decor.png'}
-				width={1000}
+				width={800}
 				height={600}
 				className='absolute right-0 top-0 h-full  bottom-0 -z-[1] lg:h-auto lg:top-auto lg:hidden'
 				alt='decor'
@@ -80,14 +80,39 @@ export default function Home() {
 					Пройти тест
 				</Link>
 			</div>
-			<div>
-				<Image
-					src={'/promo.png'}
-					height={866}
-					width={705}
-					alt='Person'
-					className='ml-auto lg:h-full lg:w-[70%]'
-				/>
+			<div className='grid grid-cols-2 ml-auto w-[80%] md:w-[100%] md:-translate-y-[0px] md:flex md:justify-end'>
+				<div className='-translate-y-[80px] relative z-[1] md:-translate-y-[0px] md:translate-x-[30px]'>
+					<Image
+						src={'/home-1.png'}
+						height={364}
+						width={364}
+						alt='Person'
+						className='lg:h-full lg:w-full md:w-[133px] md:h-[133px]'
+					/>
+					<Image
+						src={'/home-2.png'}
+						height={364}
+						width={364}
+						alt='Person'
+						className='lg:h-full lg:w-full md:w-[133px] md:h-[133px] -translate-y-[40px] -translate-x-[50px] relative z-[1] md:-translate-x-[0px] md:-translate-y-[20px]'
+					/>
+				</div>
+				<div className='translate-y-[120px] md:translate-y-[40px] -translate-x-[50px] md:translate-x-[20px]'>
+					<Image
+						src={'/home-3.png'}
+						height={364}
+						width={364}
+						alt='Person'
+						className='lg:h-full lg:w-full md:w-[133px] md:h-[133px]'
+					/>
+					<Image
+						src={'/home-4.png'}
+						height={364}
+						width={364}
+						alt='Person'
+						className='lg:h-full lg:w-full -translate-y-[50px] md:-translate-y-[20px] -translate-x-[120px] md:-translate-x-[20px] relative z-0 md:w-[133px] md:h-[133px]'
+					/>
+				</div>
 			</div>
 		</main>
 	)
